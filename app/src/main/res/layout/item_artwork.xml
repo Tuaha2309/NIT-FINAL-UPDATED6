@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardRoot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foreground="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvExerciseName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Exercise Name"
+                android:textColor="#212121"
+                style="@style/TextAppearance.Material3.TitleMedium" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvChevron"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="›"
+                android:textSize="24sp"
+                android:textColor="#BDBDBD"/>
+        </LinearLayout>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvMuscleGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Muscle: Legs"
+            android:textColor="#424242"
+            style="@style/TextAppearance.Material3.BodyMedium"
+            android:layout_marginTop="6dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipDifficulty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Intermediate"
+                app:chipBackgroundColor="#E8F5E9" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipCalories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="500 kcal/h"
+                android:layout_marginStart="8dp"
+                app:chipBackgroundColor="#E3F2FD" />
+        </LinearLayout>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvEquipment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Equipment: Bodyweight"
+            android:textColor="#616161"
+            style="@style/TextAppearance.Material3.BodySmall"
+            android:layout_marginTop="6dp"/>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

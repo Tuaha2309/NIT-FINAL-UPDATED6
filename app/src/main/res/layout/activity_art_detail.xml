@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvDetailTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Exercise"
+            android:textColor="#212121"
+            style="@style/TextAppearance.Material3.HeadlineSmall"
+            android:layout_marginBottom="8dp"/>
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvDetailMuscleGroup"
+            style="@style/TextAppearance.Material3.BodyLarge"
+            android:text="Muscle group: "
+            android:textColor="#424242"
+            android:layout_marginTop="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvDetailEquipment"
+            style="@style/TextAppearance.Material3.BodyLarge"
+            android:text="Equipment: "
+            android:textColor="#424242"
+            android:layout_marginTop="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvDetailDifficulty"
+            style="@style/TextAppearance.Material3.BodyLarge"
+            android:text="Difficulty: "
+            android:textColor="#424242"
+            android:layout_marginTop="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvDetailCalories"
+            style="@style/TextAppearance.Material3.BodyLarge"
+            android:text="Calories burned per hour: "
+            android:textColor="#424242"
+            android:layout_marginTop="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvDetailDescriptionLabel"
+            style="@style/TextAppearance.Material3.TitleMedium"
+            android:text="Description"
+            android:textColor="#212121"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvDetailDescription"
+            style="@style/TextAppearance.Material3.BodyMedium"
+            android:textColor="#616161"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme with transparent background -->
+    <style name="Base.Theme.Nit" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Transparent background settings -->
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+
+        <!-- Optional: Prevent background dimming -->
+        <item name="android:backgroundDimAmount">0.0</item>
+
+    </style>
+
+    <!-- Public facing theme -->
+    <style name="Theme.Nit" parent="Base.Theme.Nit" />
+</resources>
